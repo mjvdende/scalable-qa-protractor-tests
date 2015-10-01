@@ -5,7 +5,7 @@ exports.config = {
     'browserName': 'firefox'
 	}, {
     'browserName': 'chrome'
-	}]
+	}],
   onPrepare: function() {
     require('jasmine-reporters');
     jasmine.getEnv().addReporter(
