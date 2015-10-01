@@ -3,7 +3,7 @@ exports.config = {
   specs: ['*-spec.js'],
   framework: 'jasmine2',
   onPrepare: function() {
-    require('jasmine-reporters');
+    var jasmineReporters = require('jasmine-reporters');
     jasmine.getEnv().addReporter(
       new jasmineReporters.JUnitXmlReporter({
         consolidateAll: true,
