@@ -9,6 +9,6 @@ exports.config = {
   onPrepare: function() {
     require('jasmine-reporters');
     jasmine.getEnv().addReporter(
-      new jasmine.JUnitXmlReporter(outputxmldir', true, true));
+      new jasmine.JUnitXmlReporter('', true, true));
   }
 };
