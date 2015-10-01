@@ -1,5 +1,5 @@
 exports.config = {
-  seleniumAddress: 'http://172.17.8.102:4448/wd/hub',
+  seleniumAddress: 'http://172.17.8.102:4444/wd/hub',
   specs: ['*-spec.js'],
   multiCapabilities: [{
     'browserName': 'firefox'
@@ -7,8 +7,8 @@ exports.config = {
     'browserName': 'chrome'
 	}],
   onPrepare: function() {
-    require('jasmine-reporters');
-    jasmine.getEnv().addReporter(
-      new jasmine.JUnitXmlReporter('report', true, true));
+  require('jasmine-reporters');
+  jasmine.getEnv().addReporter(
+    new jasmine.JUnitXmlReporter('', true, true));
   }
 };
