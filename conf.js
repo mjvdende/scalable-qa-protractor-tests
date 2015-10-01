@@ -1,7 +1,7 @@
 exports.config = {
   //seleniumAddress: 'http://localhost:4444/wd/hub',
   directConnect: true,
-  specs: ['todo-spec.js']
+  specs: ['todo-spec.js'],
   multiCapabilities: [{
     'browserName': 'firefox'
 	}, {
