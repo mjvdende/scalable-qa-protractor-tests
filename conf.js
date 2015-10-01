@@ -1,6 +1,6 @@
 exports.config = {
   directConnect: true,
-  specs: ['*-spec.js']
+  specs: ['*-spec.js'],
   onPrepare: function() {
     require('jasmine-reporters');
     jasmine.getEnv().addReporter(
