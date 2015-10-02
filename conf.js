@@ -1,11 +1,6 @@
 exports.config = {
-  seleniumAddress: 'http://172.17.8.101:4444/wd/hub',
-  specs: ['todo-spec.js'],
-  multiCapabilities: [{
-    'browserName': 'firefox'
-	}, {
-    'browserName': 'chrome'
-	}],
+  directConnect: true,
+  specs: ['*-spec.js'],
   onPrepare: function() {
     require('jasmine-reporters');
     jasmine.getEnv().addReporter(
